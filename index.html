@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <title>Frango com Mostarda e Mel na Air Fryer - Sabor Infinito</title>
+    <link rel="shortcut icon" href="images/cropped-02.Icone-blog-wap-32x32.png" type="image/x-icon">
+    <style>
+        /* Reset e base */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        @keyframes gradientBG {
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255,255,255,0.2);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        main.container {
+            max-width: 960px;
+            margin: 30px auto;
+            background: rgba(0,0,0,0.35);
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.15);
+        }
+        article h1.entry-title {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 8px #000;
+        }
+        .post-meta {
+            color: #ddd;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .post-meta a {
+            color: #ffe600;
+        }
+        .post-thumbnail img {
+            display: block;
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 0 auto 30px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.2);
+        }
+        .info-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 20px;
+            border-radius: 40px;
+            margin: 5px 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #fff;
+            box-shadow: 0 0 10px #ffeb3b;
+            transition: background 0.3s ease;
+        }
+        .info-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            filter: drop-shadow(0 0 2px #ffeb3b);
+        }
+        .info-item:hover {
+            background: #ffeb3b;
+            color: #000;
+            cursor: default;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            color: #fff;
+            text-shadow: 1px 1px 5px #000;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            color: #f0f0f0;
+            font-size: 1rem;
+        }
+        ul li::before {
+            content: "✔ ";
+            color: #ffeb3b;
+            font-weight: bold;
+        }
+        ul li {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        p, .et_pb_text_inner p {
+            color: #eee;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .step {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffeb3b;
+            margin-top: 25px;
+            margin-bottom: 6px;
+            text-shadow: 0 0 10px #ffeb3b;
+        }
+        footer {
+            background: rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: auto;
+        }
+
+        /* Popup de políticas */
+        #privacy-popup {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.85);
+            color: #eee;
+            padding: 15px 20px;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            z-index: 9999;
+            box-shadow: 0 -3px 10px rgba(255,235,59,0.7);
+        }
+        #privacy-popup p {
+            flex: 1 1 60%;
+            margin-right: 20px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        #privacy-popup a {
+            color: #ffeb3b;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        #privacy-popup button {
+            background: #ffeb3b;
+            border: none;
+            color: #000;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 10px 18px;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            flex: 0 0 auto;
+            box-shadow: 0 0 15px #ffeb3b;
+        }
+        #privacy-popup button:hover {
+            background: #ffd700;
+        }
+        @media (max-width: 600px) {
+            #privacy-popup {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #privacy-popup p {
+                margin: 0 0 10px 0;
+                flex: 1 1 100%;
+            }
+            main.container {
+                padding: 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>SABOR INFINITO</h1>
+</header>
+<main class="container" role="main">
+    <article>
+        <h1 class="entry-title">Frango com Mostarda e Mel na Air Fryer</h1>
+        <div class="post-meta">
+            Postado por <a href="#" title="Posts de Mariana Miguel" rel="author">Mariana Miguel</a> |
+            <a href="#" rel="tag">Air Fryer</a>,
+            <a href="#" rel="tag">Frango e Aves</a>
+        </div>
+        <div class="post-thumbnail">
+            <img src="images/frango-com-mostarda-e-mel-1080x640.webp" alt="Frango com Mostarda e Mel na Air Fryer" loading="lazy">
+        </div>
+        <div class="info-container" aria-label="Informações de preparo">
+            <div class="info-item">
+                <img src="images/04.Icones-preparo.webp" alt="Ícone preparo">
+                Preparo: até 10 min
+            </div>
+            <div class="info-item">
+                <img src="images/02.Icones-cozimento.webp" alt="Ícone cozimento">
+                Cozimento: até 20 min
+            </div>
+            <div class="info-item">
+                <img src="images/03.Icones-total.webp" alt="Ícone total">
+                Total: 30 min
+            </div>
+            <div class="info-item">
+                <img src="images/01.Icones-chef.webp" alt="Ícone porções">
+                4 porções
+            </div>
+        </div>
+        <p>Um franguinho é sempre bom, não é mesmo? Frito ou cozido ele é uma escolha ideal para qualquer dia. Mas nesta receita você irá aprender a fazer esse frango assado na air fryer ao tempero de mostarda e mel, confira!</p>
+        <h2>Ingredientes:</h2>
+        <ul>
+            <li>500g de filé de frango (peito ou coxa desossada)</li>
+            <li>1/4 xícara de mostarda Dijon</li>
+            <li>1/4 xícara de mel</li>
+            <li>2 colheres de sopa de azeite de oliva</li>
+            <li>2 dentes de alho, picados</li>
+            <li>1 colher de chá de sal</li>
+            <li>1/2 colher de chá de pimenta-do-reino</li>
+            <li>1 colher de chá de alecrim seco (opcional)</li>
+        </ul>
+        <h2>Modo de Preparo:</h2>
+        <p><span class="step">1.</span> Em uma tigela, misture a mostarda Dijon, o mel, o azeite de oliva, o alho picado, o sal, a pimenta-do-reino e o alecrim seco (se estiver usando) até obter um molho homogêneo.</p>
+        <p><span class="step">2.</span> Adicione os filés de frango à tigela e misture bem, garantindo que todos os pedaços estejam cobertos com o molho.</p>
+        <p><span class="step">3.</span> Pré-aqueça sua <strong><a href="#" target="_blank" rel="noopener">Air Fryer WAP Grand Family 5,2L</a></strong> a 180°C por cerca de 3 minutos. Coloque os filés de frango na cesta da air fryer em uma única camada.</p>
+        <p><span class="step">4.</span> Pulverize levemente os filés de frango com spray de óleo ou pincele com um pouco de óleo.</p>
+        <p><span class="step">5.</span> Cozinhe os filés de frango por 15-20 minutos, virando na metade do tempo, até que estejam dourados e completamente cozidos por dentro.</p>
+        <p><span class="step">6.</span> Retire os filés de frango da air fryer e deixe esfriar por alguns minutos.</p>
+        <p><span class="step">7.</span> Sirva os filés de frango quentes, acompanhados de vegetais assados, arroz ou uma salada fresca.</p>
+        <p style="text-align:center;">
+            E aí, gostou? Nada como um frango com um tempero diferenciado! Ele fica ainda melhor se feito rapidamente na <strong><a href="#" target="_blank" rel="noopener">Air Fryer WAP Grand Family 5,2L</a></strong>. Confira o site e garanta a sua!
+        </p>
+        <p style="text-align:center; color:#ffeb3b; font-weight:700;">Bom apetite!</p>
+    </article>
+</main>
+
+<!-- Popup de Políticas de Privacidade -->
+<div id="privacy-popup" role="region" aria-label="Política de Privacidade">
+    <p>
+        Utilizamos cookies para melhorar a sua experiência na plataforma e prover serviços personalizados.
+        Ao aceitar, você concorda com a coleta de cookies para ter acesso a todas as funcionalidades do site.
+        Para escolher quais quer autorizar, clique em <a href="https://ciencia-ilimitada.site/politicas/" target="_blank" rel="noopener">Definições de cookies</a>.
+        Saiba mais em nossa <a href="https://ciencia-ilimitada.site/politicas/" target="_blank" rel="noopener">Política de Privacidade</a>.
+    </p>
+    <button id="accept-cookies-btn" aria-label="Aceitar todos os cookies">Aceitar</button>
+</div>
+
+<script>
+    (function(){
+        const storageKey = "cookie_aceito";
+        const popup = document.getElementById("privacy-popup");
+        const btnAccept = document.getElementById("accept-cookies-btn");
+
+        function hidePopup(save) {
+            popup.style.opacity = '0';
+            setTimeout(() => {
+                popup.style.display = 'none';
+                if(save) localStorage.setItem(storageKey, 'true');
+            }, 500);
+        }
+
+        if(localStorage.getItem(storageKey) === "true") {
+            popup.style.display = 'none';
+        } else {
+            btnAccept.addEventListener("click", () => {
+                hidePopup(true);
+            });
+        }
+    })();
+</script>
+
+<footer>
+    � 2025 Sabor Infinito - Todos os direitos reservados.
+</footer>
+
+
+</body></html>
