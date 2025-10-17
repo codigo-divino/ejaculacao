@@ -1,322 +1,1897 @@
-<!DOCTYPE html><html lang="pt-br"><head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, follow">
-    <title>Frango com Mostarda e Mel na Air Fryer - Sabor Infinito</title>
-    <link rel="shortcut icon" href="images/cropped-02.Icone-blog-wap-32x32.png" type="image/x-icon">
-    <style>
-        /* Reset e base */
-        * {
-            margin: 0; padding: 0; box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: #eee;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-        @keyframes gradientBG {
-            0%{background-position:0% 50%;}
-            50%{background-position:100% 50%;}
-            100%{background-position:0% 50%;}
-        }
-        a {
-            color: #ffeb3b;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        header {
-            background: rgba(0,0,0,0.4);
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(255,255,255,0.2);
-        }
-        header h1 {
-            font-size: 2.2rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #fff;
-        }
-        main.container {
-            max-width: 960px;
-            margin: 30px auto;
-            background: rgba(0,0,0,0.35);
-            padding: 30px 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 25px rgba(255,255,255,0.15);
-        }
-        article h1.entry-title {
-            font-size: 2rem;
-            color: #fff;
-            margin-bottom: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            text-shadow: 1px 1px 8px #000;
-        }
-        .post-meta {
-            color: #ddd;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        .post-meta a {
-            color: #ffe600;
-        }
-        .post-thumbnail img {
-            display: block;
-            max-width: 100%;
-            border-radius: 12px;
-            margin: 0 auto 30px;
-            box-shadow: 0 0 25px rgba(255,255,255,0.2);
-        }
-        .info-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        .info-item {
-            display: flex;
-            align-items: center;
-            background: rgba(255,255,255,0.15);
-            padding: 10px 20px;
-            border-radius: 40px;
-            margin: 5px 10px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: #fff;
-            box-shadow: 0 0 10px #ffeb3b;
-            transition: background 0.3s ease;
-        }
-        .info-item img {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
-            filter: drop-shadow(0 0 2px #ffeb3b);
-        }
-        .info-item:hover {
-            background: #ffeb3b;
-            color: #000;
-            cursor: default;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 15px;
-            font-size: 1.6rem;
-            color: #fff;
-            text-shadow: 1px 1px 5px #000;
-        }
-        ul {
-            list-style: none;
-            padding-left: 20px;
-            max-width: 500px;
-            margin: 0 auto 30px;
-            color: #f0f0f0;
-            font-size: 1rem;
-        }
-        ul li::before {
-            content: "✔ ";
-            color: #ffeb3b;
-            font-weight: bold;
-        }
-        ul li {
-            margin: 10px 0;
-            line-height: 1.5;
-        }
-        p, .et_pb_text_inner p {
-            color: #eee;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            text-align: justify;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .step {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ffeb3b;
-            margin-top: 25px;
-            margin-bottom: 6px;
-            text-shadow: 0 0 10px #ffeb3b;
-        }
-        footer {
-            background: rgba(0,0,0,0.5);
-            text-align: center;
-            padding: 20px 10px;
-            font-size: 0.9rem;
-            color: #ccc;
-            margin-top: auto;
-        }
+<!DOCTYPE html>
 
-        /* Popup de políticas */
-        #privacy-popup {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,0,0,0.85);
-            color: #eee;
-            padding: 15px 20px;
-            font-size: 0.95rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            z-index: 9999;
-            box-shadow: 0 -3px 10px rgba(255,235,59,0.7);
-        }
-        #privacy-popup p {
-            flex: 1 1 60%;
-            margin-right: 20px;
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-        #privacy-popup a {
-            color: #ffeb3b;
-            font-weight: 700;
-            text-decoration: underline;
-        }
-        #privacy-popup button {
-            background: #ffeb3b;
-            border: none;
-            color: #000;
-            font-weight: 700;
-            font-size: 1rem;
-            padding: 10px 18px;
-            border-radius: 40px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            flex: 0 0 auto;
-            box-shadow: 0 0 15px #ffeb3b;
-        }
-        #privacy-popup button:hover {
-            background: #ffd700;
-        }
-        @media (max-width: 600px) {
-            #privacy-popup {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            #privacy-popup p {
-                margin: 0 0 10px 0;
-                flex: 1 1 100%;
-            }
-            main.container {
-                padding: 20px 20px;
-            }
-        }
-    </style>
+
+<html lang="pt-BR" dir="ltr">
+
+<head>
+<base href="https://infovida-brasil.site/">
+
+  
+      <!-- Google tag (gtag.js) Viagra Verde | FB -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-5NCT0DJJFV'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5NCT0DJJFV');
+</script>  <!-- Start of PowerCart API Script -->
+<iframe src='https://saudedanatureza.com/' title='cartstack' style='position: absolute;height: 0;width: 0;'></iframe>
+<!-- End of PowerCart API Script -->
+  <script>
+    ! function(i, n) {
+      i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now())
+    }(window, performance);
+  </script>
+  <link rel="preload" href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTl6WTNKcGNIUnpMbU52Ym5abGNuUmxZV2t1Ym1WMEwyTm1OVFl4TnpWakxUSmxZekl0TkRsak9TMDRPR1UzTFRFMFpXSmpNVFEyTlRjeU1pOXdiR0Y1WlhKekx6WTRaRFprTldFd05qUXlPRFpsWlRKa05HVXdNamsyT0M5Mk5DOXdiR0Y1WlhJdWFuTT18OTkyYmI3MTMxZmI4MWU4NDdmOTEzYzQxMTU3MGMyMWMzOWJjN2FiYjZmMDY3YmM5YTA4NzI1MzFkNzBlZWViNQ==" as="script">
+  <link rel="preload" href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTl6WTNKcGNIUnpMbU52Ym5abGNuUmxZV2t1Ym1WMEwyeHBZaTlxY3k5emJXRnlkSEJzWVhsbGNpMTNZeTkyTkM5emJXRnlkSEJzWVhsbGNpNXFjdz09fDE2MjJhY2YxYTRiZTQ4NzIwOGY3MjhkMzBiN2Q3NWFlMDZiMjViOWYzMjQwZjJhNDllMGE3NzEyOWUwY2M4NTk=" as="script">
+  <link rel="preload" href="https://cdn.converteai.net/cf56175c-2ec2-49c9-88e7-14ebc1465722/68d6d592013fd39e43405cbe/main.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="shortcut icon" type="image/webp?cache=1760724274" href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTltZFc1emFHRnlaUzUzYVc0dlgxOWhjWFZsWTJsdFpXNTBieTlmYUc5dFpTOXBiV2N2Vm1saFozSmhJRlpsY21SbEwyWmhkbWxqYjI0dWFXTnZ8N2Y3ZTA3ZDIxMjU4YzljODQxMzQ2NGUwNTg1ZGExZWNiMjlhODBiMTVjYTNhMmQzMDI4MGE2MmJkMWMzYTBkZA==">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Receita Secreta">
+  <meta property="og:description" content="Receita Secreta">
+  <meta property="og:image" content="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTlxYjNKdVlXd3VablZ1YzJoaGNtVXVkMmx1TDE5ZllYRjFaV05wYldWdWRHOHZYMmh2YldVdmFXMW5MMVpwWVdkeVlTQldaWEprWlM5bWNtRnpZMjh1ZDJWaWNBPT18MTJhZjIwNjA0MWQzNzNjNTRmOTFhM2MzNjIyMmM2NGYzZmQ4MjIxNTA2N2U3MTg4ZTNmMGY4ZTUyNjA5MGVjNQ==">
+  <meta name=" keywords" content="Ovo de Codorna">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Receita Secreta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Receita Secreta</title>
+
+  <link href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZZM056TG1OemN6OWpZV05vWlQweE56WXdOekkwTWpjMHxjZjVlMDUwNzc5ZWZiZDAzNzc2MDk3M2UxOGM4ZjQ5NjczMzE2NDYyMDVhOWJhMDUzYmZiODhlZTI1MGQ5MDU2" rel="stylesheet" as="style" media="all">
+  <link href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjM1I1YkdVdVkzTnpQMk5oWTJobFBURTNOakEzTWpReU56UT18MGRmNjhlYTU2MGM4MzViYmQxOTdjM2U3MGQ3MWM3OTUwNWEyNTk4MTNiNzExMjgwYTAxYzk0NmYxY2EwOTMwNA==" rel="stylesheet" as="style" media="all">
+
+  <link rel="stylesheet" href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZjMk55YVhCMGN5OXdiR0Y1WlhJdlEyeHZZV3QxY0M5emRIbHNaUzVqYzNNPXw2ODBmMTJlMTM4YjdjMjFlMTQxZmUzMmUwOGUzYWUwYjNkZjg0NDc0ZjUzYTU2ZWVkNzk5NDg4OTRjZDhmOWM3">
+
+  <style>
+    .fa-solid.fa-bars,
+    .atomicat-component-container-6dc4694 {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+
 </head>
-<body>
-<header>
-    <h1>SABOR INFINITO</h1>
-</header>
-<main class="container" role="main">
-    <article>
-        <h1 class="entry-title">Frango com Mostarda e Mel na Air Fryer</h1>
-        <div class="post-meta">
-            Postado por <a href="#" title="Posts de Mariana Miguel" rel="author">Mariana Miguel</a> |
-            <a href="#" rel="tag">Air Fryer</a>,
-            <a href="#" rel="tag">Frango e Aves</a>
-        </div>
-        <div class="post-thumbnail">
-            <img src="images/frango-com-mostarda-e-mel-1080x640.webp" alt="Frango com Mostarda e Mel na Air Fryer" loading="lazy">
-        </div>
-        <div class="info-container" aria-label="Informações de preparo">
-            <div class="info-item">
-                <img src="images/04.Icones-preparo.webp" alt="Ícone preparo">
-                Preparo: até 10 min
-            </div>
-            <div class="info-item">
-                <img src="images/02.Icones-cozimento.webp" alt="Ícone cozimento">
-                Cozimento: até 20 min
-            </div>
-            <div class="info-item">
-                <img src="images/03.Icones-total.webp" alt="Ícone total">
-                Total: 30 min
-            </div>
-            <div class="info-item">
-                <img src="images/01.Icones-chef.webp" alt="Ícone porções">
-                4 porções
-            </div>
-        </div>
-        <p>Um franguinho é sempre bom, não é mesmo? Frito ou cozido ele é uma escolha ideal para qualquer dia. Mas nesta receita você irá aprender a fazer esse frango assado na air fryer ao tempero de mostarda e mel, confira!</p>
-        <h2>Ingredientes:</h2>
-        <ul>
-            <li>500g de filé de frango (peito ou coxa desossada)</li>
-            <li>1/4 xícara de mostarda Dijon</li>
-            <li>1/4 xícara de mel</li>
-            <li>2 colheres de sopa de azeite de oliva</li>
-            <li>2 dentes de alho, picados</li>
-            <li>1 colher de chá de sal</li>
-            <li>1/2 colher de chá de pimenta-do-reino</li>
-            <li>1 colher de chá de alecrim seco (opcional)</li>
-        </ul>
-        <h2>Modo de Preparo:</h2>
-        <p><span class="step">1.</span> Em uma tigela, misture a mostarda Dijon, o mel, o azeite de oliva, o alho picado, o sal, a pimenta-do-reino e o alecrim seco (se estiver usando) até obter um molho homogêneo.</p>
-        <p><span class="step">2.</span> Adicione os filés de frango à tigela e misture bem, garantindo que todos os pedaços estejam cobertos com o molho.</p>
-        <p><span class="step">3.</span> Pré-aqueça sua <strong><a href="#" target="_blank" rel="noopener">Air Fryer WAP Grand Family 5,2L</a></strong> a 180°C por cerca de 3 minutos. Coloque os filés de frango na cesta da air fryer em uma única camada.</p>
-        <p><span class="step">4.</span> Pulverize levemente os filés de frango com spray de óleo ou pincele com um pouco de óleo.</p>
-        <p><span class="step">5.</span> Cozinhe os filés de frango por 15-20 minutos, virando na metade do tempo, até que estejam dourados e completamente cozidos por dentro.</p>
-        <p><span class="step">6.</span> Retire os filés de frango da air fryer e deixe esfriar por alguns minutos.</p>
-        <p><span class="step">7.</span> Sirva os filés de frango quentes, acompanhados de vegetais assados, arroz ou uma salada fresca.</p>
-        <p style="text-align:center;">
-            E aí, gostou? Nada como um frango com um tempero diferenciado! Ele fica ainda melhor se feito rapidamente na <strong><a href="#" target="_blank" rel="noopener">Air Fryer WAP Grand Family 5,2L</a></strong>. Confira o site e garanta a sua!
-        </p>
-        <p style="text-align:center; color:#ffeb3b; font-weight:700;">Bom apetite!</p>
-    </article>
-</main>
 
-<!-- Popup de Políticas de Privacidade -->
-<div id="privacy-popup" role="region" aria-label="Política de Privacidade">
-    <p>
-        Utilizamos cookies para melhorar a sua experiência na plataforma e prover serviços personalizados.
-        Ao aceitar, você concorda com a coleta de cookies para ter acesso a todas as funcionalidades do site.
-        Para escolher quais quer autorizar, clique em <a href="https://ciencia-ilimitada.site/politicas/" target="_blank" rel="noopener">Definições de cookies</a>.
-        Saiba mais em nossa <a href="https://ciencia-ilimitada.site/politicas/" target="_blank" rel="noopener">Política de Privacidade</a>.
-    </p>
-    <button id="accept-cookies-btn" aria-label="Aceitar todos os cookies">Aceitar</button>
+<body id="_iuUxUE3Zb9QXDma6IHd2kkAiikY2" data-page="_bCth6bdX49ExWvixAG6U" data-page-type="page"
+  class="atomicat-disable-selection" style="--autoplay-pulse-speed: 1.3333333333333333s;">
+  <div class="atomicat-big-container  ">
+
+    <div class="atomicat-container-f9d8cde atomicat-big-outer-container">
+      <div class="atomicat-outer-container     atomicat-container-full-width  ">
+        <div class="atomicat-container atomicat-inner-container  ">
+
+          <i class="fa-solid fa-bars"></i>
+
+          <div class="atomicat-component-container  atomicat-component-container-6dc4694  atomicat-relative  ">
+
+            <div
+              class="atomicat-element-container atomicat-relative atomicat-element-container-6dc4694 atomicat-heading-title-6dc4694 atomicat-heading-title    atomicat-text-6dc4694 ">
+              <h1 class="     undefined">
+                G1 - SAÚDE
+              </h1>
+            </div>
+          </div>
+
+          <p>
+            As amostras grátis ficarão disponíveis até:
+            <br>
+            <u class="hoje"></u>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="atomicat-container-6376f56 atomicat-big-outer-container     ">
+
+
+
+      <div class="atomicat-outer-container     atomicat-container-full-width  ">
+        <div class="atomicat-container atomicat-inner-container  ">
+
+
+          <div class="headline">
+            <h1>
+              “Aumentei para 19cm Com o Melzinho”
+            </h1>
+          </div>
+
+          <div class="atomicat-component-container  atomicat-component-container-c7faac7  atomicat-relative  ">
+
+            <div class="video" style="width: 100%;padding:0 10px">
+
+              <vturb-smartplayer id="vid-68d6d5a064286ee2d4e02968" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s = document.createElement("script");
+                s.src = "https://scripts.converteai.net/cf56175c-2ec2-49c9-88e7-14ebc1465722/players/68d6d5a064286ee2d4e02968/v4/player.js", s.async = !0, document.head.appendChild(s);
+              </script>
+
+              <!-- <vturb-smartplayer id="vid-68643bdd8edf222574bfd696" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s = document.createElement("script");
+                s.src = "https://scripts.converteai.net/cf56175c-2ec2-49c9-88e7-14ebc1465722/players/68643bdd8edf222574bfd696/v4/player.js", s.async = !0, document.head.appendChild(s);
+              </script> -->
+
+              <!-- Biblioteca HLS.js para tocar o vídeo .m3u8  
+              <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+              <link rel="stylesheet" href="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZjMk55YVhCMGN5OXdiR0Y1WlhJdmRuTnNMMEoxYm01NUwzTjBlV3hsTG1OemN3PT18MTZlN2YxN2UyZTkxNzhkNjNhZDI1MDM1MGI5YzcwZGRkNjRmYWQxYWMzNjY0Mjk0ZWJjZmNmZmE3NDM5MGMwNg==">
+              <style>
+                .pause-overlay.is-visible {
+                  opacity: 1;
+                  visibility: visible;
+                  background-image: url('https://infovida-brasil.site/pause.webp');
+                  /* SUBIR A IMG DE PAUSE PARA DOMINIO NOVO */
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+              </style>
+               VSL PERSONALIZADA INSERIDA AQUI  
+              <div class="smart-player-wrapper" id="player-wrapper">
+                <div id="loading-overlay" class="loading-overlay">
+                  <div class="spinner"></div>
+                </div>
+                <video id="y-player" playsinline muted autoplay></video>
+                <div id="click-catcher"></div>
+                <div class="fake-progress-bar">
+                  <div class="fake-progress-filled" id="fake-progress"></div>
+                </div>
+                <div class="smart-player-overlay" id="smart-overlay">
+                  <div class="unmute-button" id="unmute-btn">
+                    <span class="unmute-text">Seu vídeo já começou</span>
+                    <svg class="unmute-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M16 12C16 10.94 15.55 9.92 14.83 9.19M12 4L8 8H5C3.9 8 3 8.9 3 10V14C3 15.1 3.9 16 5 16H8L12 20V4Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21 21L3 3" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19 9C19.84 10.12 20.21 11.43 20.08 12.78M18.42 15.06C18.23 15.39 18 15.71 17.74 16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <span class="unmute-subtext">Clique para ouvir</span>
+                  </div>
+                </div>
+                <div class="pause-overlay" id="pause-overlay"></div>
+              </div>
+               FIM DA VSL PERSONALIZADA
+
+
+              <script>
+                const videoId = '5ab8f3fd-2f8e-4b09-897d-3bb9750dbbef'; // ID DO VIDEO NO BUNNY
+                // SCRIPT DA VSL PERSONALIZADA
+                document.addEventListener('DOMContentLoaded', () => {
+                  console.log("Valor id do video:" + videoId);
+                  // const videoId = '94b717a6-55a1-4238-b172-e1d6385b179b';
+                  const previewURL = `https://vz-084bcb42-907.b-cdn.net/${videoId}/preview.webp`;
+                  const videoSrc = `https://vz-084bcb42-907.b-cdn.net/${videoId}/playlist.m3u8`;
+
+                  const overlay = document.getElementById('smart-overlay');
+                  const video = document.getElementById('y-player');
+                  const fakeProgressBar = document.getElementById('fake-progress');
+                  const pauseOverlay = document.getElementById('pause-overlay');
+                  const clickCatcher = document.getElementById('click-catcher');
+                  const loadingOverlay = document.getElementById('loading-overlay');
+
+                  const previewImage = new Image();
+                  previewImage.src = previewURL;
+
+                  previewImage.onload = () => {
+                    overlay.style.backgroundImage = `url('${previewURL}')`;
+                    loadingOverlay.classList.add('is-hidden');
+                  };
+
+                  previewImage.onerror = () => {
+                    loadingOverlay.classList.add('is-hidden');
+                  };
+
+                  if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.loadSource(videoSrc);
+                    hls.attachMedia(video);
+                  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = videoSrc;
+                  }
+
+                  overlay.addEventListener('click', () => {
+                    fakeProgressBar.classList.add('is-animating');
+                    overlay.classList.add('is-hidden');
+
+                    video.muted = false;
+                    video.currentTime = 0;
+                    video.play();
+
+                    clickCatcher.style.display = 'block';
+                  }, {
+                    once: true
+                  });
+
+                  clickCatcher.addEventListener('click', () => {
+                    if (video.paused) {
+                      video.play();
+                    } else {
+                      video.pause();
+                    }
+                  });
+
+                  video.addEventListener('play', () => {
+                    pauseOverlay.classList.remove('is-visible');
+                    fakeProgressBar.classList.remove('is-paused');
+                  });
+
+                  video.addEventListener('pause', () => {
+                    pauseOverlay.classList.add('is-visible');
+                    fakeProgressBar.classList.add('is-paused');
+                  });
+
+                  const todayEl = document.getElementById('today');
+                  if (todayEl) {
+                    const today = new Date();
+                    const options = {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    };
+                    todayEl.textContent = today.toLocaleDateString('pt-BR', options);
+                  }
+                });
+              </script>
+ -->
+
+            </div>
+
+          </div>
+
+          <div class="ocultar">
+            <p class="box-online">
+              <b class="red">[ <i class="fa-solid fa-circle"></i> AO VIVO ]</b> <span class="online">1648</span> assistindo agora
+            </p>
+
+            <div class="box-visto">
+              <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZkbWx6ZEc4dWQyVmljQT09fDUwMmI5OGEwNmQ0MWJhYzA2YzY4MWU5MmUwNzVhZjNhNzc3OWNiNzI5OTA5YzBiMTcwODk4ZDg5MzQxZGIyMTM=" alt="">
+            </div>
+
+            <div class="referencias">
+              <p>
+                Referências Científicas
+              </p>
+
+              <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjMk5wWlc1MGFXWnBZeTF5WldabGNtVnVZMlZ6SUNneEtTNTNaV0p3fDIxNTFkOGFiYjFmMTRlYTg4YTUzNjU3ZWZjNGJjOTNiOTgxY2E5Yjk5YjUwN2EwNDhjZjcwY2Y2ZDgxNmJlNmE=" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="atomicat-container-714d4a9 atomicat-big-outer-container atomicat-delay delay    " id="scroll">
+
+    <div class="atomicat-outer-container     atomicat-container-full-width  ">
+        <div class="atomicat-container atomicat-inner-container  ">
+            <div class="atomicat-container-5df8aa1 atomicat-big-outer-container     ">
+
+                <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                    <div class="atomicat-container atomicat-inner-container  ">
+                        <div class="atomicat-container-32c3987 atomicat-big-outer-container     ">
+
+                            <div class="atomicat-outer-container     atomicat-container-boxed  " style="display: flex;flex-direction: column;max-width: 600px;">
+                                <div class="atomicat-container atomicat-inner-container  delay2 atomicat-delay">
+
+
+                                    <div class="atomicat-container-5b2e2a3 atomicat-big-outer-container box-kit">
+
+                                        <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                            <div class="atomicat-container atomicat-inner-container  ">
+                                                <div class="atomicat-container-c5fea19 atomicat-big-outer-container     ">
+
+                                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                        <div class="atomicat-container atomicat-inner-container  ">
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-a5bff17  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-a5bff17 atomicat-heading-title-a5bff17 atomicat-heading-title    atomicat-text-a5bff17 ">
+                                                                    <h3 class="h3-kit undefined">Mais Vendido</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-57a57db  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-57a57db atomicat-heading-title-57a57db atomicat-heading-title    atomicat-text-57a57db ">
+                                                                    <h3 class="     undefined">300 Dias, 6 Caixas</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-7283c87  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-7283c87 atomicat-heading-title-7283c87 atomicat-heading-title    atomicat-text-7283c87 ">
+                                                        <h1 class="h1-kit undefined">ECONOMIA DE R$1.484!</h1>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-ccd45a3  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-ccd45a3 atomicat-image-ccd45a3 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dlkzUmhMellnUTBGSldFRlRMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxjMWVhZTkyYmMyMjZjNDI0MGNlNjZjZmI4MDI4MWY1ZmIzNjRlNDY0ZjM5MWZjMzU0Mjk1MmI1MmUxYWY1YTA5" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-4b9309e  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-4b9309e atomicat-heading-title-4b9309e atomicat-text    atomicat-text-4b9309e ">
+                                                        <p class="de undefined">de R$1.782</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-d816fbc  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-d816fbc atomicat-heading-title-d816fbc atomicat-text    atomicat-text-d816fbc ">
+                                                        <p class="valor-kit undefined">
+                                                            <span>
+                                                                por
+                                                                <br>
+                                                                12x
+                                                            </span>
+                                                            29
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-frete">
+                                                    <i class="fa-solid fa-truck-fast"></i> FRETE GRÁTIS
+                                                </div>
+
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-58d5f47  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-58d5f47 atomicat-button-58d5f47 atomicat-button    atomicat-button-wrapper atomicat-flex-column ">
+                                                        <a href="" class="link_kit6 atomicat-button-before  atomicat-button     "
+                                                            id="c00a61cf-3a5a-cd17-7e01-dcc8c744596e">Solicite Aqui</a>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="selos atomicat-component-container  atomicat-component-container-7668f01  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-7668f01 atomicat-image-7668f01 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-garantia">
+                                                    <i class="fa-solid fa-shield-check"></i> 180 DIAS DE GARANTIA
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="atomicat-container-35b5e10 atomicat-big-outer-container box-kit">
+
+                                        <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                            <div class="atomicat-container atomicat-inner-container  ">
+                                                <div class="atomicat-container-ab38e49 atomicat-big-outer-container     ">
+
+                                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                        <div class="atomicat-container atomicat-inner-container  ">
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-f3dd4ea  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-f3dd4ea atomicat-heading-title-f3dd4ea atomicat-heading-title    atomicat-text-f3dd4ea ">
+                                                                    <h3 class="h3-kit undefined">Popular</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-2c350c2  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-2c350c2 atomicat-heading-title-2c350c2 atomicat-heading-title    atomicat-text-2c350c2 ">
+                                                                    <h3 class="     undefined">120 Dias, 4 Caixas</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class=" atomicat-component-container  atomicat-component-container-020fa94  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-020fa94 atomicat-heading-title-020fa94 atomicat-heading-title    atomicat-text-020fa94 ">
+                                                        <h1 class="h1-kit undefined">ECONOMIA DE R$784!</h1>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-d7208a2  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-d7208a2 atomicat-image-d7208a2 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dlkzUmhMelFnUTBGSldFRlRMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxlY2MxZTJkZGE1YmM4OThkY2Q4Y2NmMGZkNzE1Y2ZlODBmMDljMTZiNjJhODRlOGE0NjE2NzBlM2IyOTU4MjA1" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-13ef639  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-13ef639 atomicat-heading-title-13ef639 atomicat-text    atomicat-text-13ef639 ">
+                                                        <p class="   de  undefined">de R$983</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-bbbb558  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-bbbb558 atomicat-heading-title-bbbb558 atomicat-text    atomicat-text-bbbb558 ">
+                                                        <p class="valor-kit undefined"><span>
+                                                                por
+                                                                <br>
+                                                                12x
+                                                            </span> 19</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-frete">
+                                                    <i class="fa-solid fa-truck-fast"></i> FRETE GRÁTIS
+                                                </div>
+
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-b225b26  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-b225b26 atomicat-button-b225b26 atomicat-button    atomicat-button-wrapper atomicat-flex-column ">
+                                                        <a href="" class="link_kit4 atomicat-button-before  atomicat-button"
+                                                            id="b1991dd2-5648-642d-d6f6-20637c396674">Solicite Aqui</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="selos atomicat-component-container  atomicat-component-container-136da91  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-136da91 atomicat-image-136da91 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-garantia">
+                                                    <i class="fa-solid fa-shield-check"></i> 30 DIAS DE GARANTIA
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <br>
+
+                                <div class="atomicat-container-5fa55d0 atomicat-big-outer-container box-kit box-amostra">
+
+                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                        <div class="atomicat-container atomicat-inner-container  ">
+                                            <!-- <div class="atomicat-container-fdb5126 atomicat-big-outer-container     ">
+
+                                                <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                    <div class="atomicat-container atomicat-inner-container  ">
+                                                        <div
+                                                            class="atomicat-component-container  atomicat-component-container-263a90d  atomicat-relative  ">
+
+                                                            <div
+                                                                class="atomicat-element-container atomicat-relative atomicat-element-container-263a90d atomicat-heading-title-263a90d atomicat-heading-title    atomicat-text-263a90d ">
+                                                                <h3 class="h3-kit undefined">Simples</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="atomicat-component-container  atomicat-component-container-8e72bf6  atomicat-relative  ">
+
+                                                            <div
+                                                                class="atomicat-element-container atomicat-relative atomicat-element-container-8e72bf6 atomicat-heading-title-8e72bf6 atomicat-heading-title    atomicat-text-8e72bf6 ">
+                                                                <h3 class="     undefined">3 Dias</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-8af8944  atomicat-relative  ">
+
+                                                <a href="" style="width: 100% !important;margin: 0px  !important;padding: 0 !important;"
+                                                    class="link_js atomicat-element-container atomicat-relative atomicat-element-container-8af8944 atomicat-image-8af8944 atomicat-image    ">
+                                                    <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwTlVRU0FvTVNrdWQyVmljRDlqWVdOb1pUMHhOell3TnpJME1qYzB8ZTRjYzc2MjZlMzNmZjgwMWRjZjYyYjcxNzdlNDFmYzFmMjgzMDFmMzYyNTg4ZWMxYzUxOWI2YzNmNDE1YmJiYQ==" alt="" decoding="async"
+                                                        class="    ">
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-b979140  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-b979140 atomicat-heading-title-b979140 atomicat-text    atomicat-text-b979140 ">
+                                                    <p class="  de   undefined">de R$358</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-8fb0f9a  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-8fb0f9a atomicat-heading-title-8fb0f9a atomicat-text    atomicat-text-8fb0f9a ">
+                                                    <p class=" valor-kit    undefined">
+                                                        <span>
+                                                            por
+                                                        </span>
+                                                        R$0
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="text-frete atomicat-component-container  atomicat-component-container-d166803  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-d166803 atomicat-heading-title-d166803 atomicat-text    atomicat-text-d166803 ">
+                                                    <p class="h1-kit undefined">Pague somente o frete</p>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-f327155  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-f327155 atomicat-button-f327155 atomicat-button-wrapper atomicat-flex-column ">
+                                                    <a href="" class="link_js atomicat-button-before atomicat-button"
+                                                        id="5716e8e0-5d1d-2247-494c-b150e540fb04">CONFIRMAR ENDEREÇO</a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-2f7abf5  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-2f7abf5 atomicat-image-2f7abf5 atomicat-image    ">
+                                                    <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                        class="    ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <div class="atomicat-container-cd88c46 atomicat-big-outer-container  atomicat-delay  delay2">
+
+        <div class="atomicat-outer-container max-face    atomicat-container-boxed  ">
+          <div class="atomicat-container atomicat-inner-container  ">
+            <div class="atomicat-container-be3724c atomicat-big-outer-container     ">
+
+              <div class="atomicat-outer-container     atomicat-container-full-width  ">
+                <div class="atomicat-container atomicat-inner-container  ">
+                  <div class="atomicat-component-container  atomicat-component-container-715810d  atomicat-relative  ">
+                    <div
+                      class="atomicat-element-container atomicat-relative atomicat-element-container-715810d atomicat-comment-715810d atomicat-comment    ">
+                      <div spellcheck="false"
+                        class="flexBox atomicat-comment atomicat-facebook atomicat-inner-element-container">
+                        <div class="atomicat-comment-header">
+                          <div class="atomicat-comment-header-container">
+
+                            <p class="sub-comentarios">
+                              448 COMENTÁRIOS
+                            </p>
+
+                            <p class="atomicat-comment-header-text">
+                              EXIBINDO OS MAIS RELEVANTES
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="border-face">
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb015a3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfGRmOTA3ODBlMjQ1Mzg0ZWMxOWUwYmYzNWI3NzJhYmZiNDMwZDQ5MGUxNWRhYzJhYmM0NmEzNTE1NzdhNzhlMDk=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Ronaldo Freitas
+                                    <br>
+                                    <span>Leopoldina, MG</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Eu tava desconfiado, mas resolvi testar essa fórmula e em uma semana já senti diferença. O bicho acorda pronto, duro e deu uma engrossada. A entrega foi rápida, chegou em 4 dias aqui no interior. Valeu a pena.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwwYmM3YmIzN2UzOWViN2JjOWFmNDBjZDI3MDAzNTIxNzk1NzA5N2YxMDk0YjNjYjIzZjE4NzU2MGZlN2Y3NmEy" alt="DEPOIMENTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01pa3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfGRkZjRmZDk1NTllODU5M2M4YzY3YTgxNGU4MzhkYTQ2ZDFjMDA1ODhjYzk0YzMyMDMwNjhmZjRlZDc5ZGQxNDc=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Arnaldo Vieira
+                                    <br><span>Santarém, PA</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Não sou de falar essas coisas, mas esse Vigra Verde mudou meu casamento, eu tava broxando direto, mas agora que to usando, voltei a fazer ela gozar como antigamente. Por isso indico pra todo homem que tem esse problema.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNaTUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXw4N2IzNWI3ZWIyYzA0MTM2NmVmYTdiYWNjNzZkNTEyZTk4Y2NlYWU0MDlhNDI5ZTZkOGI3MjFiOTE5ZDEyNjhl" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb05pa3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfDI4MDBiMDRmZDk5MmZiZmUxYjIwZmQ4YWYwYWFjN2E3YWI1MWRlMTc2NDUwMjRlZjA2MWQyYjFhYTc0OTYyM2E=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Daniel Limeira
+                                    <br><span>Serra Talhada, PE</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Achei que era conversa fiada esse tal de mel africano, mas resolvi dar uma chance e não é que funcionou mesmo. Cresceu pelo menos uns 4 centímetros desde que comecei a usar, até a mulher ta mais safada na cama kkkk
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNeTUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwzZWQ2OGI2NjIyNzc3YTNkMGRhOTY0NThkOGVjNWVmYjllNjk4ZmRmMDMwYWUyMDI2ZDQ2NjljOTY5NGIyYzk3" alt="DEPOIMENTO 2 - PORN COM PRODUTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb05Da3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfGE5ZGI0ZTYzMWUyYjc5Y2QxOWU1ZmM1NmJiNzJmMjMzMmJjNTM5MWQyMjNiNThhZTY5Y2EwNzdjZDVkM2QwNjY=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Cesar Henrique Carvalho
+                                    <br><span>Blumenau, SC</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment"><span>
+                                      Não tava acreditando muito nesse Vigra Verde, mas não só aumentou meu pau, como deixou muito mais firme. Top mesmo.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdOQzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXxkZTg2Y2I5OGFmNGY1MmQ2NGI3OTYzYzIzMjdhYWU2NjRiNzc2OWM0ZWNhMDc5MjI3ZDNmYWMzYjViMzRlODhj" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01Ta3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfDE3ZThkNjdkZjU1NTJkOWE3OThjNzAxMzRmNzEyMWJlNzNmMTIzY2JiNDUyYmM5ZjMzNjc3MGQyMDJiZWEzZWQ=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Gilson Nogueira
+                                    <br><span>Araguaína, TO</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Só quem já passou pela vergonha de ser humilhado por ter um pênis pequeno, sabe a dor que é. Usei esse mel africano na esperança de melhorar e pra minha surpresa, deu mais resultados do que eu esperava. As mulheres estão adorando.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdOUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXw5MjkzMDljMGIzNDAzNDE2MDE3YjBmNTA0ZjlkYTA2Y2JlNzUzOGE5YmRiNDQ5MjFmMzI0YzlhZGE3Y2IzODI0" alt="DEPOIMENTO 3 - HOMEM COM PRODUTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb05Ta3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfGEzNTgyYmUwNTBjYzE3NDgwOGNmNjY3MzBlMGFjYTI3ZTRkOTM5NGIyZjk4NmQ2ZjEzOTMzZTI0NGIxOTgzNTk=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Mauro Batista
+                                    <br><span>Camaçari, BA</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Meu amigo que me indicou esse Vigra Verde, fiz o pedido no site e em poucos dias chegou na minha casa, com uma embalagem bem discreta. Comecei a usar e to gostando bastante dos resultados.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdOaTUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXw5YTc0MjU5YTFlY2ZiZmI0NmUzZWYyODEwNjI1OTMxYTY1MzlhMzNkY2EzOWIyYzcyOTY2YmRkMDUxYTNhZTUx" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb055a3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfDgxNTQ5ZjM3MDJiZGI0ZjdjYzY2ODgyMWIwYjQ5MDkxODBjMGIzMTUwODBhOThiNmRiNGMyMDQ5ZWVjYjgzZjE=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Nélio Prado
+                                    <br><span>Lins, SP</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      To com 56 anos e achava que o sexo tinha acabado pra mim, mas ai descobri esse mel africano e rapaz, pensa na potência que eu to agora, mas bom mesmo foi o tamanho que ficou, até arrumei uma novinha pra sentar nele.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdOeTUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXxhZTQxOWNmMjkyMWVhMzRiMTA2MjQ0Yzk0YzAyN2JmMWEzM2Q0MTcwNzYzNzI0NTdkYzc0OGIzZDMwNDM2NzBk" alt="DEPOIMENTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb09Ta3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfDNiZmIyZGQwMDIyZWU4NzE1ZDAxOThjMzc0ODRjMjhlMDNlMjliMDJjYTk3M2JhOTJjMmI3ZWM3YjZhYzVmNzE=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Ricardo Almeida
+                                    <br><span>Ji-Paraná, RO</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      To usando faz um mês e nunca tive tanta disposição como agora. Antes nem vontade de transar eu tinha, agora sinto tesão o tempo todo.
+                                    </span>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb09Da3VkMlZpY0Q5allXTm9aVDB4TnpZd056STBNamMwfGUzMzY3NWM0OTQwYjgxZTFkMzkxZWRiMjVjMzU4ODhiNjRhYWZhYmQwYjA0NDkzZjNiMjg2YmU2NThlNGEyNDA=" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Everton Rocha
+                                    <br><span>Avaré, SP</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Em duas semanas eu já senti o resultado usando esse mel, nunca vi meu pau tão grande e grosso como agora, a patroa adorou.
+                                    </span>
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdPUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwyYzc5YjhmYjU0MjUwMDhkYzU1YzRlYjgwNDI2YTIwYmY4NDNmYjFjYjhlMWU4MzY3MDJiZWU0NjUxNWQzMjJi" alt="DEPOIMENTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01URXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxkZGM3ODZmZGVmNzcwODlkZWRiZmFkNTU0ZDgzMTMyYWNkODZiMmI4YWVhZWEzMThlNzI2NTdlN2VmNzlmOGQ3" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Luciano Teles
+                                    <br><span>Macaé, RJ</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Usei sem contar pra minha mulher e no terceiro dia ela já perguntou o que tava acontecendo comigo, que eu tava mais potente kkkk mal sabe ela que é só esse Vigra Verde.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVEF1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHwwNTY0YTdkODVmODBiYjllMjJlOWZkNzU5Y2VhZDUwMzMwYzM2NTY5MzkwN2QxODU3MTYyNzYxYWQ4ZWRlYzJi" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01USXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXw3MTFlZGMzNDQyYzI4ZDU0NzY4MTZjMmU1OGNkYmVkMjg5NjdlM2QzZTk1MGZkZTQxMzZlMGU2NGFmOTA1ZDhh" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Jorge Mota
+                                    <br><span>Ituiutaba, MG</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Esse mel africano salvou meu casamento. Eu nem procurava mais minha mulher pq sabia que ia falhar, mas agora ela não tem sossego, toda hora o bichão ta duro, querendo mais.
+                                    </span>
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVEV1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHxiOTE0ZGZjOTI0NzEwODk4N2Y0ODNlODE4NjE2OTNmMDI1MGFhMDViMmRkZjUwYTg2N2Q1MmM3MGJlYjhkNGNh" alt="DEPOIMENTO">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UUXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXwzMzhjODc0N2E3MGE0NzQzZjY2YmNiZGFmMDk2ZTlkZjg1ZjBlM2IzMjFiNjVkMmVjODE3MWNhY2Q0YjI5MjZk" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Fernando Lopes
+                                    <br><span>Bragança, PA</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Achei a entrega bem rápida e bom que ninguém aqui de casa desconfiou o que era. Logo comecei a usar e cara, parece milagre mas fez meu pau crescer mais de 5 cm.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVEl1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHw5NDMyNjU3NDdlYWQyOGJmZjE2MWM5NzFkNDMxM2ZkNTZhYTNlNDUyNjAzN2UyYTBkZmY3ZjJjNmJkMTc3Y2Ri" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UTXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxhZTgxZWJmOGJiYmEzMWU2ZTZkMmEzNTZlYWNkMGNmMWFlYzY4M2UyYzEyYzU4NzhmNzMyNGExZTI3NGZhZDg4" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Tatiane Moreira
+                                    <br><span>Penedo, AL</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment"><span>
+                                      Eu e meu marido passamos por uma fase muito difícil no nosso casamento. Toda relação ele brochava e eu tava insatisfeita com isso. Até que conversei com uma amiga e ela me falou que o esposo dela tinha usado, resolvi comprar e assim que meu marido começou a usar eu já notei diferença. O pau dele ficou mais duro e sem brincadeira, tá muito maior. Todo homem deveria testar isso!
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVFl1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHw2YmM2YzZlZmQwOGFmZGJjZjEwNTY1NDRhYzNkMDU0MzFiNDIwNmM4NjMwNDA5YmY0YTMzMTFiMTE3ZDVjZjc2" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UWXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXwwZjlkMzM1ZWI3NzliMmQ5N2Y4Y2YxNzY1ZjEwODZjYjdkMzM5N2U0NDQ3OTc0MWMyNmU0YTI3MjNjMjhmNDI1" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Alfredo Menezes
+                                    <br><span>Pouso Alegre, MG</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Comecei a usar pq um amigo meu disse que era muito bom e olha, fiquei impressionado com os resultados. Desde que comecei a usar esse mel africano, meu pau parece capim de tanto que cresce, to achando até que vou ter que parar de usar kkk
+                                    </span>
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVE11ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHxiM2NkMjBjNDdlYmYzMTkzNDhiZWRmODJjYjM5NmYwZjhlYTQ3MmVhZWFhYTliNTNjZTVkYTgzZjI4MDE4MGZl" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UQXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxjM2I2YjM5ZDU4NTdmZmJiNWYzMjdiZTQ1ZTZkNWE0MGI3ZjVhMDJjNWVlZDZlOWU4MGYwNjQ1MzBhNTBjM2Nl" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Roberto Souza
+                                    <br><span>Canoinhas, SC</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment"><span>
+                                      Comprei pra mim ver se dava uma animada na relação e hoje sou um homem realizada na cama. Meu pênis cresceu muitoo e agora entra rasgando.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVGN1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHxhNTRiZGUzNTBiNDgxZjIxYWQ1ZmEyZDkxOTZlNmFiMGY1ZmU0ZTk2ZTZmZWY5Nzg4NDA3NDMzNDU4YTgwNjUy" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UVXBMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxiNDFkYWJhNzU2YTllYjkwODk0ZmQ4ZWE0ODkyYTNiMDhlY2QxYTM1NTZmNWNjZjdmZmQ2MzhhOWFiMzYyOTg5" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+
+                                  <div class="atomicat-facebook-username">
+                                    Edson Ribeiro
+                                    <br><span>Apucarana, PR</span>
+                                  </div>
+
+                                  <div class="atomicat-facebook-comment">
+
+                                    <span>
+                                      Fiquei meio cismado de comprar esse Vigra Verde, mas foi a melhor coisa que eu fiz. Além de ter aumentado o tamanho do meu pau, melhorou muito o meu desempenho. Recomendo de olhos fechados!
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVFF1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHw4MDk3ZDdkNGZjMTE4YjkwZGRkYzQ2MDBmMjdjZTk1Y2M2YzNmM2FiYmM4MGEwNDg0Y2I5MTAwMDEyNzJmMTMw" alt=" DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01UY3BMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXw4MjMxOTMyODFiNDRhZWE5N2E3NmY3MmVhZTgyMzE1Mzk4MjkzN2RmZWMxZWY0ZjQxODYxNDdjYTJhMTNhMWQz" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+
+                                  <div class="atomicat-facebook-username">
+                                    Leandro Pinto
+                                    <br><span>Afogados da Ingazeira, PE</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Tenho 50 anos e achava que não tinha mais jeito pra mim. O pior era que a mulher tava quase me largando por causa do meu pau murcho, mas aí descobri essa fórmula e agora to virado numa máquina, a mulher que se cuide agora.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdPQzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxYTFmMzI2YzRhN2RjNjZlMTU3Mjg2NGU3OTA1NWZmNzU2ZDhhNGFiZmFhZTNkMzJiYjU0YjM3NDBlZGIyZmFk" alt="DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flexBox">
+                            <div class="atomicat-facebook-parent">
+                              <div class="atomicat-facebook-thumb"><img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZjR1Z5Wm1sekwzQmxjbVpwYkNBb01Ua3BMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXw0MmE5MmM3NmNlN2Y4NWM2MGU5YzZiYjQ3Y2E2YjViZjA2ZDYzZGNjZWQ4ZDMzZmY4OTM5MjBmMTMxOTg1ODIz" alt=""
+                                  class="atomicat-facebook-thumbImage" width="70" height="70"></div>
+                              <div class="atomicat-facebook-information">
+                                <div class="atomicat-facebook-text">
+                                  <div class="atomicat-facebook-username">
+                                    Gabriel Alves
+                                    <br><span>Formosa, GO</span>
+                                  </div>
+                                  <div class="atomicat-facebook-comment">
+                                    <span>
+                                      Eu não era mais o mesmo, tava pra baixo, sem potência, me deixando na mão toda vez. Aí um dia conheci esse tratamento e comecei a dar um trato na patroa. Por isso, sempre que posso indico esse produto, salvou meu casamento, sem dúvida.
+                                    </span>
+
+                                    <div class="img-face">
+                                      <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwUkZVRTlKVFVWT1ZFOGdNVFV1ZDJWaWNEOWpZV05vWlQweE56WXdOekkwTWpjMHwxODNmM2JjYzFjNDIzMTM2OGM5ODU4OTA1NjRhZmNiOTI4YmJiNjhkZjc3YWQxODQ0NGMwMjc5ZmJjODA0ZDUy" alt=" DEPOIMENTO">
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="atomicat-facebook-miscellanous">
+                                  <div class="atomicat-facebook-miscellanousLeft">
+                                    <div class="atomicat-facebook-miscellanousText">Curtir</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-miscellanousText">Responder</div>
+                                    <p class="atomicat-facebook-dot">·</p>
+                                    <div class="atomicat-facebook-timestamp"></div>
+                                  </div>
+
+                                  <div class="atomicat-facebook-likesComponent">
+                                    <img class="atomicat-facebook-likeImage"
+                                      src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYVd0bElDZ3hLUzUzWldKd1AyTmhZMmhsUFRFM05qQTNNalF5TnpRPXwxNTVjNTRjMTY1NTNlN2VjZTA5YzlmMjY0N2E5ZDA4YTQ0ZGI2ODFlMDQ0OGIwMzZmYmRiMjA5MGU1Mzk1NzNl" alt="likes"><span class="quantidade-like"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <div class="atomicat-comment-footer">
+                            <div class="atomicat-comment-footer-container"><img class="atomicat-comment-facebook-logo"
+                                src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZabUpzYjJkdkxuZGxZbkEvWTJGamFHVTlNVGMyTURjeU5ESTNOQT09fDZmNmE0NmU3YzQxODBlMDhmZGVjMDFlYjZiZWZkOTk2NmExMGZhZjg0NWMwOGVhM2E2ZmNiMDFiMzU0OWZlY2E=" alt="fblogo">
+                              <p class="atomicat-comment-footer-text">This post is no longer receiving comments!</p>
+                            </div>
+                          </div> -->
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atomicat-container-714d4a9 atomicat-big-outer-container atomicat-delay delay    " id="scroll">
+
+    <div class="atomicat-outer-container     atomicat-container-full-width  ">
+        <div class="atomicat-container atomicat-inner-container  ">
+            <div class="atomicat-container-5df8aa1 atomicat-big-outer-container     ">
+
+                <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                    <div class="atomicat-container atomicat-inner-container  ">
+                        <div class="atomicat-container-32c3987 atomicat-big-outer-container     ">
+
+                            <div class="atomicat-outer-container     atomicat-container-boxed  " style="display: flex;flex-direction: column;max-width: 600px;">
+                                <div class="atomicat-container atomicat-inner-container  delay2 atomicat-delay">
+
+
+                                    <div class="atomicat-container-5b2e2a3 atomicat-big-outer-container box-kit">
+
+                                        <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                            <div class="atomicat-container atomicat-inner-container  ">
+                                                <div class="atomicat-container-c5fea19 atomicat-big-outer-container     ">
+
+                                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                        <div class="atomicat-container atomicat-inner-container  ">
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-a5bff17  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-a5bff17 atomicat-heading-title-a5bff17 atomicat-heading-title    atomicat-text-a5bff17 ">
+                                                                    <h3 class="h3-kit undefined">Mais Vendido</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-57a57db  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-57a57db atomicat-heading-title-57a57db atomicat-heading-title    atomicat-text-57a57db ">
+                                                                    <h3 class="     undefined">300 Dias, 6 Caixas</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-7283c87  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-7283c87 atomicat-heading-title-7283c87 atomicat-heading-title    atomicat-text-7283c87 ">
+                                                        <h1 class="h1-kit undefined">ECONOMIA DE R$1.484!</h1>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-ccd45a3  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-ccd45a3 atomicat-image-ccd45a3 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dlkzUmhMellnUTBGSldFRlRMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxjMWVhZTkyYmMyMjZjNDI0MGNlNjZjZmI4MDI4MWY1ZmIzNjRlNDY0ZjM5MWZjMzU0Mjk1MmI1MmUxYWY1YTA5" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-4b9309e  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-4b9309e atomicat-heading-title-4b9309e atomicat-text    atomicat-text-4b9309e ">
+                                                        <p class="de undefined">de R$1.782</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-d816fbc  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-d816fbc atomicat-heading-title-d816fbc atomicat-text    atomicat-text-d816fbc ">
+                                                        <p class="valor-kit undefined">
+                                                            <span>
+                                                                por
+                                                                <br>
+                                                                12x
+                                                            </span>
+                                                            29
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-frete">
+                                                    <i class="fa-solid fa-truck-fast"></i> FRETE GRÁTIS
+                                                </div>
+
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-58d5f47  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-58d5f47 atomicat-button-58d5f47 atomicat-button    atomicat-button-wrapper atomicat-flex-column ">
+                                                        <a href="" class="link_kit6 atomicat-button-before  atomicat-button     "
+                                                            id="c00a61cf-3a5a-cd17-7e01-dcc8c744596e">Solicite Aqui</a>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="selos atomicat-component-container  atomicat-component-container-7668f01  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-7668f01 atomicat-image-7668f01 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-garantia">
+                                                    <i class="fa-solid fa-shield-check"></i> 180 DIAS DE GARANTIA
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="atomicat-container-35b5e10 atomicat-big-outer-container box-kit">
+
+                                        <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                            <div class="atomicat-container atomicat-inner-container  ">
+                                                <div class="atomicat-container-ab38e49 atomicat-big-outer-container     ">
+
+                                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                        <div class="atomicat-container atomicat-inner-container  ">
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-f3dd4ea  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-f3dd4ea atomicat-heading-title-f3dd4ea atomicat-heading-title    atomicat-text-f3dd4ea ">
+                                                                    <h3 class="h3-kit undefined">Popular</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="atomicat-component-container  atomicat-component-container-2c350c2  atomicat-relative  ">
+
+                                                                <div
+                                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-2c350c2 atomicat-heading-title-2c350c2 atomicat-heading-title    atomicat-text-2c350c2 ">
+                                                                    <h3 class="     undefined">120 Dias, 4 Caixas</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class=" atomicat-component-container  atomicat-component-container-020fa94  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-020fa94 atomicat-heading-title-020fa94 atomicat-heading-title    atomicat-text-020fa94 ">
+                                                        <h1 class="h1-kit undefined">ECONOMIA DE R$784!</h1>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-d7208a2  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-d7208a2 atomicat-image-d7208a2 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dlkzUmhMelFnUTBGSldFRlRMbmRsWW5BL1kyRmphR1U5TVRjMk1EY3lOREkzTkE9PXxlY2MxZTJkZGE1YmM4OThkY2Q4Y2NmMGZkNzE1Y2ZlODBmMDljMTZiNjJhODRlOGE0NjE2NzBlM2IyOTU4MjA1" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-13ef639  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-13ef639 atomicat-heading-title-13ef639 atomicat-text    atomicat-text-13ef639 ">
+                                                        <p class="   de  undefined">de R$983</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-bbbb558  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-bbbb558 atomicat-heading-title-bbbb558 atomicat-text    atomicat-text-bbbb558 ">
+                                                        <p class="valor-kit undefined"><span>
+                                                                por
+                                                                <br>
+                                                                12x
+                                                            </span> 19</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-frete">
+                                                    <i class="fa-solid fa-truck-fast"></i> FRETE GRÁTIS
+                                                </div>
+
+                                                <div
+                                                    class="atomicat-component-container  atomicat-component-container-b225b26  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-b225b26 atomicat-button-b225b26 atomicat-button    atomicat-button-wrapper atomicat-flex-column ">
+                                                        <a href="" class="link_kit4 atomicat-button-before  atomicat-button"
+                                                            id="b1991dd2-5648-642d-d6f6-20637c396674">Solicite Aqui</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="selos atomicat-component-container  atomicat-component-container-136da91  atomicat-relative  ">
+
+                                                    <div
+                                                        class="atomicat-element-container atomicat-relative atomicat-element-container-136da91 atomicat-image-136da91 atomicat-image    ">
+                                                        <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                            class="    ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-garantia">
+                                                    <i class="fa-solid fa-shield-check"></i> 30 DIAS DE GARANTIA
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <br>
+
+                                <div class="atomicat-container-5fa55d0 atomicat-big-outer-container box-kit box-amostra">
+
+                                    <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                        <div class="atomicat-container atomicat-inner-container  ">
+                                            <!-- <div class="atomicat-container-fdb5126 atomicat-big-outer-container     ">
+
+                                                <div class="atomicat-outer-container     atomicat-container-boxed  ">
+                                                    <div class="atomicat-container atomicat-inner-container  ">
+                                                        <div
+                                                            class="atomicat-component-container  atomicat-component-container-263a90d  atomicat-relative  ">
+
+                                                            <div
+                                                                class="atomicat-element-container atomicat-relative atomicat-element-container-263a90d atomicat-heading-title-263a90d atomicat-heading-title    atomicat-text-263a90d ">
+                                                                <h3 class="h3-kit undefined">Simples</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="atomicat-component-container  atomicat-component-container-8e72bf6  atomicat-relative  ">
+
+                                                            <div
+                                                                class="atomicat-element-container atomicat-relative atomicat-element-container-8e72bf6 atomicat-heading-title-8e72bf6 atomicat-heading-title    atomicat-text-8e72bf6 ">
+                                                                <h3 class="     undefined">3 Dias</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-8af8944  atomicat-relative  ">
+
+                                                <a href="" style="width: 100% !important;margin: 0px  !important;padding: 0 !important;"
+                                                    class="link_js atomicat-element-container atomicat-relative atomicat-element-container-8af8944 atomicat-image-8af8944 atomicat-image    ">
+                                                    <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwTlVRU0FvTWlrdWQyVmljRDlqWVdOb1pUMHhOell3TnpJME1qYzB8YTRhYWNhMzQ3YTE0OTJhZTYxNDM1MzYzM2QwZjk3MTI1NWYxMjk5ODgyNmI1MWM4ZTJmNmZmZTVmYTdmNDEzYQ==" alt="" decoding="async"
+                                                        class="    ">
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-b979140  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-b979140 atomicat-heading-title-b979140 atomicat-text    atomicat-text-b979140 ">
+                                                    <p class="  de   undefined">de R$358</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-8fb0f9a  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-8fb0f9a atomicat-heading-title-8fb0f9a atomicat-text    atomicat-text-8fb0f9a ">
+                                                    <p class=" valor-kit    undefined">
+                                                        <span>
+                                                            por
+                                                        </span>
+                                                        R$0
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="text-frete atomicat-component-container  atomicat-component-container-d166803  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-d166803 atomicat-heading-title-d166803 atomicat-text    atomicat-text-d166803 ">
+                                                    <p class="h1-kit undefined">Pague somente o frete</p>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-f327155  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-f327155 atomicat-button-f327155 atomicat-button-wrapper atomicat-flex-column ">
+                                                    <a href="" class="link_js atomicat-button-before atomicat-button"
+                                                        id="5716e8e0-5d1d-2247-494c-b150e540fb04">CONFIRMAR ENDEREÇO</a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="atomicat-component-container  atomicat-component-container-2f7abf5  atomicat-relative  ">
+
+                                                <div
+                                                    class="atomicat-element-container atomicat-relative atomicat-element-container-2f7abf5 atomicat-image-2f7abf5 atomicat-image    ">
+                                                    <img src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZVa3BtZFdOT01qVTJPRGN6TUM1M1pXSndQMk5oWTJobFBURTNOakEzTWpReU56UT18NTE4ZWZmN2I2YzdhODE5YzI0ZGJkOGJlOWEzODFlZGY2OTkzZjA5NGU4MGFmODFkNjg1MzZkMjBhZDBkODc2Mg==" alt="" decoding="async"
+                                                        class="    ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<script>
-    (function(){
-        const storageKey = "cookie_aceito";
-        const popup = document.getElementById("privacy-popup");
-        const btnAccept = document.getElementById("accept-cookies-btn");
+        <section class="box-garantia atomicat_delay delay2">
+          <div class="garantia-container">
+            <img class="garantia-image placeholder-loader" src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZhVzVqYkhWa1pWOXRZV2x1TDNOcGRHVnpMMFpDTDBOc2IyRnJkWEF2WDNacFlXZHlZUzEyWlhKa1pTOHdOUzEyYzJ3dmFXNWtaWGhmWm1sc1pYTXZUVWxFU1VGVEwwZEJVa0ZPVkVsQkxuZGxZbkE9fDJlZmE3Nzc1YWFiNTcwNmQzOGQ5ODVkN2MzOWRjNDVkOTdlZDA3ODhjYTI3MzE1NTYwYmFlYzhhMjg2ZmI2YmY=" alt="Garantia blindada" title="" width="330" height="330">
 
-        function hidePopup(save) {
-            popup.style.opacity = '0';
-            setTimeout(() => {
-                popup.style.display = 'none';
-                if(save) localStorage.setItem(storageKey, 'true');
-            }, 500);
+            <div class="garantia-text">
+              <h2>Garantia Blindada Vigra Verde</h2>
+
+              <p>Quando você pedir o Vigra Verde, também receberá uma <b>garantia blindada de 180 dias em cada
+                  caixa</b> para solicitar todo o seu dinheiro de volta.</p>
+              <p>
+                Estamos tão confiantes que o Vigra Verde vai te trazer resultados, que se você não estiver 100%
+                satisfeito e não notar uma grande melhora na sua qualidade
+                de vida, <b>nós vamos te devolver até o último centavo pago.</b>
+              </p>
+              <p>
+                Basta enviar um e-mail para <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99faf6f7edf8edf6d9eaece9f6ebedfceffcf7fdf8eab7faf6f4">[email&#160;protected]</a> em até 180 dias a partir da sua compra que faremos
+                a devolução integral do seu dinheiro,
+                <b>sem qualquer questionamento!</b>
+              </p>
+
+              <p>Por isso, faça seu pedido agora. Você não tem absolutamente NADA a perder, e tudo a ganhar.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      var atomicat_delay = document.querySelectorAll(".delay");
+      var atomicat_delay2 = document.querySelectorAll(".delay2");
+      var ocultar = document.querySelectorAll(".ocultar");
+      var timeout2 = 1130000; // 18:50
+      var timeout1 = 302000; //  05:02
+
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const params = {};
+
+      urlParams.forEach((value, key) => {
+        params[key] = value;
+      });
+
+      for (let key in params) {
+        if (params.hasOwnProperty(key)) {
+          // console.log(`${key}: ${params[key]}`);
         }
+      }
 
-        if(localStorage.getItem(storageKey) === "true") {
-            popup.style.display = 'none';
+
+      if (params) {
+        for (let key in params) {
+          if (`${key}` == "timeout") {
+            timeout1 = `${params[key]}`;
+            timeout2 = `${params[key]}`;
+          }
+          if (`${key}` == "timeout2") {
+            timeout2 = `${params[key]}`;
+          }
+          if (`${key}` == "timeout1") {
+            timeout1 = `${params[key]}`;
+          }
+        }
+      }
+
+      console.log("Timeout 1: " + timeout1);
+      console.log("Timeout 2: " + timeout2);
+
+      setTimeout(() => {
+        atomicat_delay.forEach(element => {
+          element.classList.remove("atomicat-delay");
+        });
+        ocultar.forEach(element => {
+          element.classList.add("none");
+        });
+      }, timeout1);
+
+      setTimeout(() => {
+        atomicat_delay2.forEach(element => {
+          element.classList.remove("atomicat-delay");
+        });
+
+      }, timeout2);
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const hoje = new Date();
+        const dataFormatada = hoje.toLocaleDateString("pt-BR");
+
+        const elemento = document.querySelector(".atomicat-hoje");
+        if (elemento) {
+          elemento.textContent = dataFormatada;
+        }
+      });
+    </script>
+
+    <script src="https://mundodasdescobertas.site/api.php?token=YUhSMGNITTZMeTkyYVhSaGJDMXVaWGR6TG5OcGRHVXZjMk55YVhCMGN5OXdiR0Y1WlhJdlEyeHZZV3QxY0M5elkzSnBjSFF1YW5NPXxkMmFlYzVlN2FhMjIwZDkxOGQzNzBjYzgwMTRhM2M0M2JmYzEzODEwYTY4OWQ0MTZmMDgwODMyYzc2ZmMxYzVk"></script>
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+
+    <script>
+      var timestamp = document.querySelectorAll(".atomicat-facebook-timestamp");
+      var like = document.querySelectorAll(".quantidade-like");
+
+      like.forEach(el => {
+        el.textContent = Math.floor(Math.random() * (301 - 89 + 1)) + 89; // Números de 89 a 301
+      });
+
+      timestamp.forEach((el, index) => {
+        if (index < 4) {
+          el.textContent = "30m";
         } else {
-            btnAccept.addEventListener("click", () => {
-                hidePopup(true);
-            });
+          let hours = Math.floor((index - 4) / 4) + 1; // A cada 4 divs, soma 1h
+          el.textContent = `${hours}h`;
         }
-    })();
-</script>
+      });
+    </script>
 
-<footer>
-    � 2025 Sabor Infinito - Todos os direitos reservados.
-</footer>
+    <script>
+      var link_kit4 = document.querySelectorAll(".link_kit4");
+      var link_kit6 = document.querySelectorAll(".link_kit6");
+      var link_js = document.querySelectorAll(".link_js");
 
+      parametros = "";
+      parametros_back = "";
+      src = "_Vna-vsl-biv9";
 
-</body></html>
+      if (params) {
+        for (let key in params) {
+
+          if (`${key}` == "fbclid") {
+            parametros = parametros + "&" + `${key}` + "=" + `${params[key]}`;
+            parametros_back = parametros_back + "&" + `${key}` + "=" + `${params[key]}`;
+          }
+          if (`${key}` == "src") {
+            parametros = parametros + "&" + `${key}` + "=" + `${params[key]}` + src;
+            parametros_back = parametros_back + "&" + `${key}` + "=" + `${params[key]}` + src + "_BACK";
+          }
+
+        }
+      }
+
+      link_kit4.forEach(element => {
+        element.href = "https://seguro.pagah.com/checkout/ZQXDIJ?" + parametros;
+      });
+
+      link_kit6.forEach(element => {
+        element.href = "https://seguro.pagah.com/checkout/HESYWR?" + parametros;
+      });
+
+      link_js.forEach(element => {
+        element.href = "https://seguro.pagah.com/checkout/EUOXYM?p=c" + parametros;
+      });
+    </script>
+
+    <script type="text/javascript">
+      let back_redirect_back_link = 'https://promocao-viagraverde.site/amostra2/?ck=fb2' + parametros_back + '';
+
+      history.pushState({}, "", location.href);
+      history.pushState({}, "", location.href);
+
+      window.onpopstate = function() {
+        setTimeout(function() {
+          location.href = back_redirect_back_link;
+        }, 1);
+      };
+    </script>
+    <script>
+      let deveSubtrair = true; // Variável que alterna entre subtrair e somar
+
+      // Código 1: Atualizar o valor na div "online" a cada 3 segundos
+      function atualizarOnline() {
+        const divOnline = document.querySelector(".online");
+        let valorAtual = parseInt(divOnline.textContent);
+
+        // Gera valores aleatórios para subtração e soma
+        const subtracao = Math.floor(Math.random() * 3) + 3; // Valor entre 3 e 5
+        const soma = Math.floor(Math.random() * 4) + 7; // Valor entre 7 e 10
+
+        // Alternar entre subtrair e somar de forma sequencial
+        if (deveSubtrair) {
+          valorAtual -= subtracao;
+        } else {
+          valorAtual += soma;
+        }
+
+        // Atualiza a flag para alternar entre subtração e soma na próxima vez
+        deveSubtrair = !deveSubtrair;
+
+        // Atualiza o valor exibido na div
+        divOnline.textContent = valorAtual;
+      }
+
+      setInterval(atualizarOnline, 5000); // Atualizar a cada 3 segundos
+      // Código 2: Imprimir a data no formato dd/mm/yyyy na div "hoje"
+      function exibirDataAtual() {
+        const divHoje = document.querySelector(".hoje");
+        const dataAtual = new Date();
+        const dia = String(dataAtual.getDate()).padStart(2, '0');
+        const mes = String(dataAtual.getMonth() + 1).padStart(2, '0'); // Meses começam em 0
+        const ano = dataAtual.getFullYear();
+
+        divHoje.textContent = `${dia}/${mes}/${ano}`;
+      }
+      exibirDataAtual(); // Exibir a data ao carregar a página
+    </script>
+
+</body>
+
+</html>
